@@ -1,0 +1,19 @@
+{
+  "name": "bee-hooks",
+  "version": "0.0.1",
+  "description": "bee-hooks 🐝",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happydhKim/bee-hooks.git"
+  },
+  "author": "happydhKim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/happydhKim/bee-hooks/issues"
+  },
+  "homepage": "https://github.com/happydhKim/bee-hooks#readme"
+}
