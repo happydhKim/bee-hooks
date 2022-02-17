@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "bee-hooks 🐝",
   "main": "./dist/index.js",
+  "types": "./global.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
