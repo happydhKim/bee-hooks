@@ -1,11 +1,18 @@
 {
   "name": "bee-hooks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "bee-hooks 🐝",
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "fullscreen",
+    "usefullscreen"
+  ],
   "main": "./dist/index.js",
-  "types": "./global.d.ts",
+  "types": "./dist",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "jest": "jest",
     "lint": "eslint src --ext .ts,.tsx"

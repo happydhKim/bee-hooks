@@ -84,3 +84,4 @@ var useFullscreen = function () {
     return { fullscreenRef: fullscreenRef, toggle: toggle, isFullscreen: isFullscreen };
 };
 exports.useFullscreen = useFullscreen;
+//# sourceMappingURL=useFullscreen.js.map

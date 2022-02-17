@@ -1,5 +1,21 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+interface FullscreenElementTypes extends Document {
+  mozFullScreenElement?: Element;
+  msFullscreenElement?: Element;
+  webkitFullscreenElement?: Element;
+  mozCancelFullScreen?: () => void;
+  msExitFullscreen?: () => void;
+  webkitExitFullscreen?: () => void;
+}
+
+interface FullscreenFunctionTypes {
+  requestFullscreen?: () => void;
+  mozRequestFullScreen?: () => void;
+  msRequestFullscreen?: () => void;
+  webkitRequestFullscreen?: () => void;
+}
+
 const getFullscreenElement = (): Element | undefined => {
   const elementType: FullscreenElementTypes = window.document;
   const fullscreenElement =
