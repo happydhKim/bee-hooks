@@ -29,8 +29,8 @@ const deactivateFullscreen = () => {
   return null;
 };
 
-const activateFullScreen = (element: HTMLElement | undefined) => {
-  const functionType: FullscreenFunctionTypes  = element;
+const activateFullScreen = (element: HTMLElement) => {
+  const functionType: FullscreenFunctionTypes = element;
   if (typeof functionType.requestFullscreen === 'function') {
     return functionType.requestFullscreen();
   }
@@ -90,7 +90,7 @@ export const useFullscreen = () => {
   }, []);
 
   const toggle = useCallback(() => {
-    getFullscreenElement() ? deactivateFullscreen() : activateFullScreen(ref.current);
+    getFullscreenElement() ? deactivateFullscreen() : activateFullScreen(ref.current!);
   }, []);
 
   useEffect(() => {
